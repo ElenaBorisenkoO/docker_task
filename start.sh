@@ -17,11 +17,11 @@
 
 #this command used to remove old content in default ngix webapp directory
 #this will empty old content
-rm -r /var/www/html/*
+sudo rm -r /var/www/html/*
 
 #using this command we copy our html data from **build** direcory (copy new build)
 #to nginx working directory, so this is our new html data
-cp src/** /var/www/html
+sudo cp src/** /var/www/html
 
 #in addition we change permissions to allow nginx access this files 
 
